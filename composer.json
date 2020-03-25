@@ -16,8 +16,8 @@
         "kss-php/kss-php": "dev-master",
         "twbs/bootstrap": "3.3.*",
         "typo3fluid/fluid": "*",
-        "zendframework/zend-cache": "2.5.*",
-        "zendframework/zend-serializer": "2.5.*",
+        "laminas/laminas-cache": "^2.9",
+        "laminas/laminas-serializer": "^2.9",
         "endroid/qr-code": "^3.7",
         "gajus/dindent": "2.0.*"
     },

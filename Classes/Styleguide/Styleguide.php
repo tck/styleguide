@@ -40,7 +40,7 @@ Class Styleguide {
 	protected $cacheDir = FALSE;
 
 	/**
-	 * @var Zend_Cache
+	 * @var \Laminas\Cache\Storage\Adapter\AbstractAdapter
 	 */
 	protected $cache = null;
 
@@ -486,22 +486,22 @@ Class Styleguide {
 			return;
 		}
 
-	    $this->cache = \Zend\Cache\StorageFactory::factory(array(
-		    'adapter' => array(
+	    $this->cache = \Laminas\Cache\StorageFactory::factory([
+		    'adapter' => [
 		        'name' => 'filesystem',
-		        'options' => array(
+		        'options' => [
 			        'cache_dir' => $this->getCacheDir(),
-			        'ttl' => $this->getCacheLifetime() // kept short, just enough to cache all previews on one page
-		        )
-		    ),
-		    'plugins' => array(
+			        'ttl' => $this->getCacheLifetime(), // kept short, just enough to cache all previews on one page
+				],
+			],
+		    'plugins' => [
 		        // Don't throw exceptions on cache errors
-		        'exception_handler' => array(
+		        'exception_handler' => [
 		            'throw_exceptions' => false
-		        ),
-		        'serializer'
-		    )
-		));
+				],
+		        'serializer',
+		    ],
+		]);
 	}
 
 	protected function getDefaultSource()

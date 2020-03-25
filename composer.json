@@ -7,16 +7,18 @@
         "css documentation"
     ],
     "license": "MIT",
+    "repositories": [
+        { "type": "vcs", "url": "https://github.com/tck/kss-php" }
+    ],
     "require": {
-        "php": ">=5.3.3",
-        "symfony/finder": "^4.4|^5.0",
-        "kss-php/kss-php": "2.0.*",
+        "php": ">=7.2.0",
+        "symfony/finder": ">=4.0|>=5.0",
+        "kss-php/kss-php": "dev-master",
         "twbs/bootstrap": "3.3.*",
         "typo3fluid/fluid": "*",
-        "twig/twig": "2.11.*",
         "zendframework/zend-cache": "2.5.*",
         "zendframework/zend-serializer": "2.5.*",
-        "endroid/qr-code": "^1.5",
+        "endroid/qr-code": "^3.7",
         "gajus/dindent": "2.0.*"
     },
     "authors": [

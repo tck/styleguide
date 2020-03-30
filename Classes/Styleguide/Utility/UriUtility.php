@@ -2,6 +2,7 @@
 
 namespace Thopra\Styleguide\Utility;
 
+use Endroid\QrCode\ErrorCorrectionLevel;
 use Endroid\QrCode\QrCode;
 
 Class UriUtility {
